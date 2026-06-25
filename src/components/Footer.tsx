@@ -14,10 +14,10 @@ export function Footer() {
           <div className="space-y-6">
             <Logo iconClassName="w-8 h-8 text-sm" textClassName="text-xl" />
             <p className="text-slate-600 text-sm leading-relaxed">
-              Empowering your business with high-performance software systems, low-latency trading infrastructure, distributed systems, and modern C++ development in Ahmedabad, India.
+              Helping businesses transform ideas into scalable digital products through custom software development, enterprise solutions, SaaS platforms, data-driven applications, and technology modernization.
             </p>
             <p className="text-slate-600 text-sm leading-relaxed">
-              Our team of experts delivers reliable technology solutions tailored to your business needs, engineered for long-term success.
+              We combine technical expertise with a business-first approach to deliver reliable solutions that support growth, efficiency, and long-term success.
             </p>
           </div>
 
