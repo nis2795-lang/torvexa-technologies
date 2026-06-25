@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { industries, techStack, companyInfo } from '../data';
-import { CheckCircle2, Target, Activity, TrendingUp, Handshake, CalendarDays, Users, ArrowRight } from 'lucide-react';
+import { CheckCircle2, Target, Activity, TrendingUp, Handshake, CalendarDays, Users, ArrowRight, Settings, UserCheck, ShieldCheck, Clock, Layers } from 'lucide-react';
 
 export function Features() {
   return (
@@ -38,25 +38,51 @@ export function Features() {
         </div>
       </section>
 
-      {/* Why Businesses Trust Us */}
+      {/* Why Businesses Choose Us */}
       <section className="py-24 bg-[linear-gradient(135deg,#1e3a8a_0%,#2563eb_100%)] relative overflow-hidden text-white">
         <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-blue-500/20 rounded-full blur-3xl -translate-y-1/2 -translate-x-1/2 pointer-events-none" />
         <div className="absolute bottom-[-20%] right-[-10%] w-[600px] h-[600px] bg-indigo-500/20 rounded-full blur-3xl pointer-events-none" />
 
         <div className="container mx-auto px-6 relative z-10">
           <div className="max-w-3xl mx-auto text-center mb-16">
-            <h2 className="text-3xl md:text-5xl font-bold mb-6">Why Businesses Trust Us</h2>
+            <h2 className="text-3xl md:text-5xl font-bold mb-6">Why Businesses Choose Us ?</h2>
             <p className="text-xl text-blue-100">
               We don't just build software. We build long-term partnerships.
             </p>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
-              { stat: '30%', text: 'Boost in Productivity', icon: Target },
-              { stat: '24/7', text: 'Real-time Insights', icon: Activity },
-              { stat: '2x', text: 'Faster Fulfillment', icon: TrendingUp },
-              { stat: '95%', text: 'Client Retention', icon: Handshake }
+              {
+                title: 'Custom-Built Solutions',
+                description: 'No generic templates. Every solution is designed around your business requirements.',
+                icon: Settings
+              },
+              {
+                title: 'Dedicated Technical Ownership',
+                description: 'Work directly with experienced engineers throughout the project lifecycle.',
+                icon: UserCheck
+              },
+              {
+                title: 'Security & Confidentiality',
+                description: 'NDA-backed engagements with strong focus on IP protection and data security.',
+                icon: ShieldCheck
+              },
+              {
+                title: 'Long-Term Partnership',
+                description: 'Ongoing support, enhancements, and technical guidance after deployment.',
+                icon: Handshake
+              },
+              {
+                title: 'On-Time Delivery',
+                description: 'Structured planning and milestone-driven execution.',
+                icon: Clock
+              },
+              {
+                title: 'Scalable Architecture',
+                description: 'Systems designed to grow with your business needs.',
+                icon: Layers
+              }
             ].map((item, i) => (
               <motion.div
                 key={i}
@@ -64,28 +90,14 @@ export function Features() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.1 }}
-                className="bg-white/10 backdrop-blur-md border border-white/20 p-8 rounded-3xl text-center hover:bg-white/20 transition-all shadow-lg"
+                className="bg-white/10 backdrop-blur-md border border-white/20 p-8 rounded-3xl hover:bg-white/20 transition-all shadow-lg text-left"
               >
-                <div className="w-12 h-12 mx-auto rounded-xl bg-blue-500/30 flex items-center justify-center mb-6">
+                <div className="w-12 h-12 rounded-xl bg-blue-500/30 flex items-center justify-center mb-6">
                   <item.icon className="w-6 h-6 text-white" />
                 </div>
-                <div className="text-4xl md:text-5xl font-bold mb-3">{item.stat}</div>
-                <div className="text-sm font-medium text-blue-100 uppercase tracking-wide">{item.text}</div>
+                <h3 className="text-xl font-bold mb-3">{item.title}</h3>
+                <p className="text-blue-100 leading-relaxed">{item.description}</p>
               </motion.div>
-            ))}
-          </div>
-
-          <div className="flex flex-wrap justify-center gap-6 md:gap-10">
-            {[
-              'On-Time Delivery',
-              'Dedicated Project Manager',
-              'Post-Launch Support',
-              'NDA & IP Protection'
-            ].map((text, i) => (
-              <div key={i} className="flex items-center gap-2">
-                <CheckCircle2 className="w-5 h-5 text-green-400" />
-                <span className="font-medium text-white/90">{text}</span>
-              </div>
             ))}
           </div>
         </div>
