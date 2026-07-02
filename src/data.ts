@@ -24,7 +24,7 @@ export const companyInfo = {
   tagline: "Engineering Systems Where Performance Matters",
   shortDesc: "Torvexa Technologies is a specialized software engineering consultancy helping businesses build, optimize, and scale high-performance software systems.",
   longDesc: "From low-latency trading infrastructure and market data platforms to custom business applications, CRM systems, dashboards, and enterprise software, we deliver reliable technology solutions designed for performance, scalability, and long-term success. We partner with startups, fintech companies, trading firms, and enterprises to solve complex technical challenges and transform ideas into production-ready systems.",
-  location: "Ahmedabad, India",
+  location: "Torvexa Technologies\nCanal Road\nGhodasar, Ahmedabad - 380050\nGujarat, India",
   globalReach: "Serving clients globally.",
   email: "contact@torvexatech.com",
   linkedin: "www.linkedin.com/company/torvexa-technologies/",
